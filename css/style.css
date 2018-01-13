@@ -1,0 +1,190 @@
+/* ---------------FONTY
+-----------------------------*/
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.eot');
+    src: local('Raleway Light'), local('Raleway-Light'),
+    url('../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Light.woff2') format('woff2'),
+    url('../fonts/Raleway-Light.woff') format('woff'),
+    url('../fonts/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ThinItalic.eot');
+    src: local('Raleway Thin Italic'), local('Raleway-ThinItalic'),
+    url('../fonts/Raleway-ThinItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Raleway-ThinItalic.woff') format('woff'),
+    url('../fonts/Raleway-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.eot');
+    src: local('Raleway Bold'), local('Raleway-Bold'),
+    url('../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff'),
+    url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.eot');
+    src: local('Raleway'), local('Raleway-Regular'),
+    url('../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Raleway-Regular.woff2') format('woff2'),
+    url('Raleway-Regular.woff') format('woff'),
+    url('../fonts/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--------------
+   Layout
+-------------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.column, .form-group-one, .form-group-two, .copyright, .social-media, .logo {
+    float: left;
+}
+
+.col-2-layout .column {
+    width: 50%;
+}
+
+.col-3-layout .column {
+    width: 33.33%;
+}
+
+.form-group-one, .copyright {
+    width: 60.00%;
+}
+
+.form-group-two {
+    width: 40.00%;
+}
+
+.social-media, .logo {
+    width: 20%;
+}
+
+
+form::after,
+.col-2-layout::after,
+.col-3-layout::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+div {
+    border: 1px solid red;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+/*-----------HEADER-------------*/
+
+
+.site-header {
+    background-color: black;
+    color: white;
+}
+
+.site-header nav  {
+    text-align: right;
+
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*----------------
+Section hero
+-------------------*/
+
+.section-hero {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+79,f2f5f6+79,b6bcb5+100,c8d7dc+100 */
+    background: rgb(242,245,246); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,245,246,1) 79%, rgba(242,245,246,1) 79%, rgba(182,188,181,1) 100%, rgba(200,215,220,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(242,245,246,1) 79%,rgba(242,245,246,1) 79%,rgba(182,188,181,1) 100%,rgba(200,215,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(242,245,246,1) 79%,rgba(242,245,246,1) 79%,rgba(182,188,181,1) 100%,rgba(200,215,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+    padding-top: 100px;
+}
+
+.section-hero .column:nth-child(2) {
+    text-align: center;
+}
+
+
+/*----------------
+section products
+-------------------*/
+
+
+.section-products .col-3-layout {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+
+
+/*----------------
+section-price list
+-------------------*/
+
+
+/*----------------
+section-contact
+-------------------*/
+
+
+
+.form-control {
+    display: block;
+}
+
+/
+
+
+
+
+
+
+
