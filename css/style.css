@@ -49,6 +49,19 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('Raleway-ExtraBold.eot');
+    src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'),
+    url('Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('Raleway-ExtraBold.woff2') format('woff2'),
+    url('Raleway-ExtraBold.woff') format('woff'),
+    url('Raleway-ExtraBold.ttf') format('truetype'),
+    url('Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
+
 /*--------------
    Layout
 -------------*/
@@ -61,7 +74,7 @@
 }
 
 .container {
-    width: 800px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -90,7 +103,7 @@
 }
 
 
-form::after,
+.section-contact img:nth-child(2)::after,
 .col-2-layout::after,
 .col-3-layout::after {
     content: "";
@@ -107,7 +120,7 @@ img {
 }
 
 body {
-    font-family: "Raleway";
+    font-family: "Raleway",sans-serif;
 }
 
 /*-----------HEADER-------------*/
@@ -116,6 +129,21 @@ body {
 .site-header {
     background-color: black;
     color: white;
+    text-transform: uppercase;
+
+}
+
+.site-header h3 {
+    letter-spacing: 1px;
+    padding: 11px 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+}
+
+.site-header .green-font {
+    color: #24ba9f;
+    font-weight: 900;
 }
 
 .site-header nav  {
@@ -125,62 +153,435 @@ body {
 
 nav li {
     display: inline-block;
+    padding: 11px 20px;
+
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 1px;
+
 }
-
-
 
 /*----------------
 Section hero
 -------------------*/
 
 .section-hero {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f5f6+79,f2f5f6+79,b6bcb5+100,c8d7dc+100 */
-    background: rgb(242,245,246); /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(242,245,246,1) 79%, rgba(242,245,246,1) 79%, rgba(182,188,181,1) 100%, rgba(200,215,220,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(242,245,246,1) 79%,rgba(242,245,246,1) 79%,rgba(182,188,181,1) 100%,rgba(200,215,220,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(242,245,246,1) 79%,rgba(242,245,246,1) 79%,rgba(182,188,181,1) 100%,rgba(200,215,220,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
-    padding-top: 100px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+0,fafafa+55,fafafa+64,fafafa+64,fafafa+65,ceced6+100 */
+    background: #fafafa; /* Old browsers */
+    background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 55%, #fafafa 64%, #fafafa 64%, #fafafa 65%, #ceced6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fafafa 0%, #fafafa 55%, #fafafa 64%, #fafafa 64%, #fafafa 65%, #ceced6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fafafa 0%, #fafafa 55%, #fafafa 64%, #fafafa 64%, #fafafa 65%, #ceced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#ceced6', GradientType=0); /* IE6-9 */
+    padding-top: 95px;
+    padding-bottom: 62px;
+
 }
 
-.section-hero .column:nth-child(2) {
+.section-hero .col-2-layout {
+    position: relative;
+}
+
+.article-hero {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateY(-50%);
+    padding-right: 100px;
+
+}
+
+
+.article-hero h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+.article-hero span {
+    color: #24ba9f;
+    font-weight: bold;
+}
+
+.article-hero a {
+    text-transform: uppercase;
+    background-color: #24ba9f;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 23px;
+    padding: 13px 35px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    word-spacing: -5px;
+}
+
+.article-hero p {
+    line-height: 20px;
+    margin-bottom: 30px;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+
+
+
+
+/*----------------
+Section products
+-------------------*/
+
+
+.section-products {
+    margin-top: 28px;
+    margin-bottom: 70px;
+}
+
+.section-products h5 {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.line-decor {
+    height: 8px;
+    background-color: #24ba9f;
+    width: 43%;
+    margin-top: 1px;
+}
+
+.section-products p {
+    font-size: 14px;
+    line-height: 1.5em;
+    color: gray;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.section-products .column {
+    padding: 0 26px;
+}
+.section-products .column:last-child {
+    border: 1px solid gray;
+    padding-top: 20px;
+}
+
+.product-img {
+    position: relative;
+}
+
+.img-label {
+    position: absolute;
+    top: 145px;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    min-width: 100%;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .5px;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+
+.img-label span {
+    text-transform: uppercase;
+}
+
+
+/*----------------
+Section price list
+-------------------*/
+
+.section-price-list {
+    background-color: #f1f1f1;
+    padding-top: 48px;
+    padding-bottom: 63px;
+}
+
+.section-price-list h3 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.section-price-list .line-decor {
+    width: 320px;
+    margin-bottom: 75px;
+}
+
+.section-price-list .column {
     text-align: center;
 }
 
+.section-price-list .column:first-child {
+    padding-right: 15px;
+}
 
-/*----------------
-section products
--------------------*/
+.section-price-list .column:nth-child(2) {
+    padding: 0 15px;
+}
 
-
-.section-products .col-3-layout {
-    margin-top: 30px;
-    margin-bottom: 60px;
+.section-price-list .column:last-child {
+    padding-left: 15px;
 }
 
 
+.section-price-list li {
+    list-style-type: none;
+}
 
-/*----------------
-section-price list
--------------------*/
+.section-price-list h2 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.offer-one, .offer-three {
+    background-color: #f9f9f9;
+    border: 1px solid #c2c2c2;
+}
+
+.offer-two {
+    background-color: #24ba9f;
+}
+
+.offer-one, .offer-two, .offer-three {
+    border-radius: 5px;
+    position: relative;
+}
+
+.offer-one h2, .offer-three h2 {
+    color: #24ba9f;
+
+}
+
+.offer-two h2 {
+    color: white;
+}
+
+.price-circle {
+    min-width: 130px;
+    min-height: 130px;
+    border-radius: 100%;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    margin-bottom: 35px;
+    border: 1px solid #c2c2c2;
+}
 
 
-/*----------------
-section-contact
--------------------*/
+.price-per-month {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
 
+.price {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+sup {
+    font-size: 16px;
+}
+
+.currency {
+    display: block;
+    text-transform: uppercase;
+}
+
+
+.offer-items {
+    min-height: 270px;
+    margin-bottom: 25px;
+
+}
+
+.section-price-list li{
+    font-size: 25px;
+    padding: 7.5px 0;
+
+}
+
+.offer-one li:nth-child(2n+1),
+.offer-three li:nth-child(2n+1) {
+    background-color: #e4e4e4;
+}
+
+.offer-two li:nth-child(2n+1) {
+    background-color: white;
+}
+
+.offer-one li:nth-child(2n),
+.offer-three li:nth-child(2n),
+.offer-two li:nth-child(2n){
+    background-color: #f1f1f1;
+}
+
+.offer-one .join-button,
+.offer-three .join-button{
+    background-color: #24ba9f;
+    text-decoration:none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.offer-two .join-button {
+    background-color: white;
+    text-decoration:none;
+    color: #24ba9f;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+
+.offer-one::before,
+.offer-two::before,
+.offer-three::before {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+    top: -27.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+
+}
+
+.offer-one::before,
+.offer-three::before {
+    background-color: white;
+    border: 2px solid #dddddd;
+}
+
+.offer-two::before {
+    background-color: #24ba9f;
+
+}
+
+.offer-one::after,
+.offer-two::after,
+.offer-three::after {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -12.5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 100%;
+}
+
+
+.offer-one::after,
+.offer-three::after {
+    background-color: #c2c2c2;
+}
+
+.offer-two::after {
+    background-color: #f9f9f9;
+}
+
+
+/*----------------------
+    Section-contact
+  ----------------------*/
 
 
 .form-control {
     display: block;
 }
 
-/
+.section-contact h3 {
+    text-transform: uppercase;
+    color: gray;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.section-contact {
+    background-color: #fff;
+    padding-top: 48px;
+}
+
+.section-contact .line-decor {
+    height: 8px;
+    background-color: #24ba9f;
+    width: 320px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+
+.form-control {
+    font-size: 35px;
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid #24ba9f;
+    margin-bottom: 10px;
+}
+
+.section-contact img:first-child {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.section-contact span {
+    font-size: 20px;
+}
+
+.section-contact button {
+    display: block;
+    margin: 0 auto;
+    text-transform: uppercase;
+    color: white;
+    background-color: #24ba9f;
+    font-size: 40px;
+    padding: 10px 100px;
+    border-radius: 10px;
+}
+
+.section-contact img:nth-child(2) {
+    float:left;
+}
+
+
+/*
+.data-processing-agreement {
+    display: inline-block;
+    margin: 0 auto;
+}
+*/
+
+/* -----------------------------------------
+Footer
+----------------------------------------*/
+
+
+
 
 
 
