@@ -4,18 +4,19 @@
     <meta charset="utf-8">
     <title>Sit in chair</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
     <header class="site-header">
         <div class="container">
             <div class="col-2-layout">
                 <div class="column">
-                    <h3>Sit <span class="green-font">on</span> chair</h3>
+                    <h3>Sit <span class="celadon-font">on</span> chair</h3>
                 </div>
                 <nav class="column">
-                        <ul>
+                        <ul class=>
                             <li><a href="#">O firmie</a></li>
-                            <li><a href="#">Galeria</a></li>
+                            <li><a class= "margin" href="#">Galeria</a></li>
                             <li><a href="#">Kontakt</a></li>
                         </ul>
                 </nav>
@@ -24,14 +25,21 @@
     </header>
     <section class="section-hero">
         <div class="container">
+            <ul class="dropdown-menu">
+                <li>Aktualności</li>
+                <li>Nasz team</li>
+                <li>Historia</li>
+            </ul>
+            <span class="less-than celadon-font">&lt</span>
+            <span class="greater-than celadon-font">&gt</span>
             <div class="col-2-layout">
-                <div class="column">
+                <div class="img-hero">
                     <img src="images/black_chair.png"/>
                 </div>
-                <div class="column article-hero">
-                    <h1>Sit <span>on </span>our <span>chair</span></h1>
+                <div class="article-hero">
+                    <h1>Sit <span class="celadon-font">on </span>our <span class="celadon-font">chair</span></h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias animi consectetur cum, deserunt dicta eius eligendi explicabo fuga harum illum incidunt natus praesentium rerum sapiente similique sunt vel vitae?</p>
-                    <a href="#">Zobacz więcej</a>
+                    <button>Zobacz więcej</button>
                 </div>
             </div>
         </div>
@@ -40,16 +48,16 @@
         <div class="container">
             <div class="col-3-layout">
                 <div class="column">
-                    <div class="product-img">
+                        <div class="product1">
                             <img src="images/box1_img.jpg">
                             <div class="img-label">
                                 Chair <span>Clair</span>
                                 <div class="line-decor"></div>
                             </div>
-                    </div>
+                        </div>
                 </div>
                 <div class="column">
-                    <div class="product-img">
+                    <div class="product2">
                         <img src="images/box2_img.jpg">
                         <div class="img-label">
                             Chair <span>Margarita</span>
@@ -57,17 +65,21 @@
                         </div>
                     </div>
                 </div>
-                <article class="column">
+                <div class="column">
+                    <div class="article-products">
                         <h5>Finds all inputs</h5>
                         <div class="line-decor"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam asperiores assumenda cupiditate deleniti distinctio, doloribus eum excepturi incidunt magni obcaecati, placeat porro, sint vero voluptate. Fuga nam recusandae vero!</p>
-                </article>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam asperiores assumenda cupiditate deleniti distinctio, doloribus eum excepturi incidunt magni obcaecati, placeat porro, sint vero voluptate.</p>
+                        <br>
+                        <p>Fuga nam recusandae vero! Accusamus aliquam asperiores assumenda cupiditate.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <section class="section-price-list">
         <div class="container">
-            <h3>Cennik</h3>
+            <h4>Cennik</h4>
             <div class="line-decor"></div>
             <div class="col-3-layout">
                 <div class="column">
@@ -83,8 +95,7 @@
                             <li>Zakup towaru</li>
                             <li>Serwis</li>
                         </ul>
-                        <a  class="join-button" href="#">Dołącz</a>
-
+                        <button  class="join-button" href="#">Dołącz</button>
                     </div>
                 </div>
                 <div class="column">
@@ -92,7 +103,7 @@
                         <h2>Standard plan</h2>
                         <div class="price-circle">
                             <div class="price-per-month">
-                                <span class="price">85<sup>99</sup></span>
+                                <span class="price">95<sup>99</sup></span>
                                 <span class="currency">pln/msc</span>
                             </div>
                         </div>
@@ -101,7 +112,7 @@
                             <li>Serwis</li>
                             <li>Gwarancja 5 lat</li>
                         </ul>
-                        <a  class="join-button" href="#">Dołącz</a>
+                        <button class="join-button" href="#">Dołącz</button>
                     </div>
                 </div>
                 <div class="column">
@@ -114,12 +125,12 @@
                             </div>
                         </div>
                         <ul class="offer-items">
-                            <li>Zakup towaru</li>
+                            <li>Zakup towaru + dowóz</li>
                             <li>Serwis</li>
                             <li>Gwarancja 6 lat</li>
                             <li>Porady projektanta</li>
                         </ul>
-                        <a  class="join-button" href="#">Dołącz</a>
+                        <button  class="join-button" href="#">Dołącz</button>
                     </div>
                 </div>
             </div>
@@ -127,30 +138,32 @@
     </section>
     <section class="section-contact">
         <div class="container">
-            <h3>Kontakt</h3>
-            <div class="line-decor"></div>
-            <form>
-                <div class="form-group-one">
-                    <input class="form-control" type="text" name="firstname" placeholder="Imię">
-                    <input  class="form-control" type="email" name="email" placeholder="email">
-                    <textarea class="form-control" name="message" placeholder="Wiadomość"></textarea>
-                </div>
-                <div class="form-group-two">
-                    <img src="images/red_chair.png">
-                    <img src="images/form_ok.jpg"/>
-                    <span>Zgadzam się na przetwarzanie danych osoboych
-                    </span>
-                    <button type="submit" class="submit-button">Wyślij
-                    </button>
-                </div>
-            </form>
+            <div class="col-2-layout">
+                <h4>Kontakt</h4>
+                <div class="line-decor"></div>
+                <form>
+                    <div class="form-group-one">
+                        <input class="form-control" type="text" name="firstname" placeholder="Imię">
+                        <input  class="form-control" type="email" name="email" placeholder="email">
+                        <textarea class="form-control" name="message" placeholder="Wiadomość"></textarea>
+                    </div>
+                    <div class="form-group-two">
+                        <img src="images/red_chair.png">
+                            <img src="images/form_ok.jpg"/>
+                            <span>Zgadzam się na przetwarzanie danych osobowych
+                            </span>
+                        <button type="submit" class="submit-button">Wyślij
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
     <footer>
         <div class="container">
             <div class="col-3-layout">
                 <div class="copyright">
-                    <span>Copyright 2014 | All rights reserved. Sit on Chair</span>
+                    <span>Copyright 2014 | All rights reserved. - Sit on Chair</span>
                 </div>
                 <div class="social-media">
                     <img src="images/flickr.png"/>
@@ -159,8 +172,7 @@
                     <img src="images/twitter.png"/>
                 </div>
                 <div class=logo>
-                    <span>Sit on Chair</span>
-                </div>
+                    <h6>Sit <span>on </span>Chair</h6>
             </div>
         </div>
     </footer>
