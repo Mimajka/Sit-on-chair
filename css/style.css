@@ -96,12 +96,10 @@ Section hero
 
 .section-hero .container {
     padding: 12px 50px 0 50px;
-
-}
-
-.section-hero .col-2-layout {
     position: relative;
+
 }
+
 
 
 .dropdown-menu {
