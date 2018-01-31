@@ -57,6 +57,11 @@ body {
     text-transform: uppercase;
 }
 
+.site-header a {
+    text-decoration: none;
+    color: white;
+}
+
 h3 {
     font-size: 13px;
     padding: 7px 0;
@@ -77,8 +82,6 @@ nav li {
 
 nav a {
     font-weight: bold;
-    color: white;
-    text-decoration: none;
     font-size: 13px;
     margin-left: 35px;
 }
@@ -92,16 +95,20 @@ nav a {
     top: 42px;
     left: 18px;
     text-align: center;
-    padding: 0;
+
 }
 
 .dropdown-content a {
     margin:0;
     text-transform: none;
+    padding: 0 3px;
 }
 
 .dropdown-content li:hover {
-    background-color: gray;
+    background-color: #f1f1f1;
+}
+
+.dropdown-content li:hover a{
     color: black;
 }
 
@@ -128,13 +135,6 @@ nav a {
     right: 60px;
 }
 
-
-
-
-
-
-
-
 /*----------------
 Section hero
 -------------------*/
@@ -149,12 +149,10 @@ Section hero
 
 }
 
-
-
 .section-hero .container {
-    padding: 70px 50px 0 50px;
+    padding: 10px 50px 10px 50px;
     position: relative;
-
+    height: 520px;
 }
 
 
@@ -164,11 +162,11 @@ Section hero
 }
 
 .img-hero img {
-    width: 140%;
+    width: 150%;
     position: relative;
-    left: -82px;
+    left: -85px;
+    top: 60px;
 }
-
 
 .article-hero {
     width: 55%;
@@ -176,7 +174,7 @@ Section hero
     float: left;
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 20px;
     transform: translateY(-50%);
 }
 
@@ -202,7 +200,7 @@ h1 {
 
 .article-hero p {
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
     padding: 20px 70px;
     font-size: 15px;
 }
@@ -215,6 +213,7 @@ h1 {
     font-size: 70px;
     top: 50%;
     transform: translateY(-50%);
+    text-decoration: none;
 }
 
 .less-than {
@@ -223,6 +222,21 @@ h1 {
 
 .greater-than {
     right: 0;
+}
+
+/*Slider*/
+
+.slider {
+    list-style: none;
+}
+
+.slider li {
+    display: none;
+
+}
+.slider .visible{
+    display: block;
+    text-align: center;
 }
 
 /*----------------
@@ -658,11 +672,3 @@ footer .col-3-layout {
 .logo span {
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
