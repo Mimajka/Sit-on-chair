@@ -51,14 +51,16 @@ body {
 .site-header {
     background-color: black;
     color: white;
-    text-transform: uppercase;
     padding: 6px 0;
     letter-spacing: 1px;
+    position: relative;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 13px;
     padding: 7px 0;
+
 }
 
 nav {
@@ -69,6 +71,8 @@ nav {
 
 nav li {
     display: inline-block;
+    position: relative;
+
 }
 
 nav a {
@@ -78,6 +82,57 @@ nav a {
     font-size: 13px;
     margin-left: 35px;
 }
+
+.dropdown-content {
+    display:none;
+    position:absolute;
+    background-color: black;
+    width:110px;
+    z-index:1;
+    top: 42px;
+    left: 18px;
+    text-align: center;
+    padding: 0;
+}
+
+.dropdown-content a {
+    margin:0;
+    text-transform: none;
+}
+
+.dropdown-content li:hover {
+    background-color: gray;
+    color: black;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content li {
+    padding: 5px 0;
+    list-style-type: none;
+    color: white;
+    display: block;
+}
+
+.dropdown-content::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: absolute;
+    top: -10px;
+    right: 60px;
+}
+
+
+
+
+
+
 
 
 /*----------------
@@ -94,38 +149,12 @@ Section hero
 
 }
 
+
+
 .section-hero .container {
-    padding: 12px 50px 0 50px;
+    padding: 70px 50px 0 50px;
     position: relative;
 
-}
-
-
-
-.dropdown-menu {
-    list-style-type: none;
-    color: white;
-    background: black;
-    display: inline-block;
-    padding: 5px 10px;
-    position: relative;
-    left: 650px;
-}
-
-.dropdown-menu li {
-    padding: 5px;
-}
-
-.dropdown-menu::before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 10px solid black;
-    position: absolute;
-    top: -10px;
-    right: 60px;
 }
 
 
