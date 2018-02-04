@@ -1,0 +1,127 @@
+
+.form-group-one, .form-group-two {
+  float: left;
+}
+.form-group-one, .copyright {
+  width: 60.00%;
+}
+
+.form-group-two {
+  width: 40.00%;
+  padding: 0 25px;
+}
+
+.section-contact img:first-child {
+  padding-bottom: 40px;
+}
+
+.section-contact img:nth-child(2) {
+  float:left;
+  border: 1px solid #24ba9f;
+  padding: 2px;
+  margin-right: 5px;
+}
+
+.section-contact h2 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.section-contact {
+  background-color: #fff;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-top: 40px;
+}
+
+.section-contact .line-decor {
+  height: 8px;
+  width: 320px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  font-size: 30px;
+  width: 100%;
+  padding: 15px 15px;
+  border: 1px solid #24ba9f;
+  margin-bottom: 25px;
+
+}
+
+.form-control::placeholder {
+  color: #c2c2c2;
+}
+
+.section-contact img:first-child {
+  display: block;
+  margin: 0 auto;
+}
+
+.checkbox_2 {
+  position: relative;
+
+
+}
+
+.checkbox_2 label {
+  display: block;
+  font-size: 20px;
+  padding-left: 65px;
+}
+
+.checkbox_2 input {
+  display: block;
+  opacity: 0;
+  height: 48px;
+  position: absolute;
+  width: 48px;
+  cursor: pointer;
+}
+
+
+.checkbox_2 label::before, .checkbox_2 label::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #24ba9f;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.checkbox_2 label::after {
+  background: url("../images/checkmark.png") no-repeat center;
+  background-size: 80% 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.checkbox_2 input:checked + label::after {
+  display: block;
+}
+
+.section-contact button {
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  background-color: #24ba9f;
+  font-size: 40px;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 0;
+}
+
+textarea {
+  height: 232px;
+  resize: none;
+}

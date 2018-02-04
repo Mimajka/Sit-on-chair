@@ -1,0 +1,62 @@
+.section-products {
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.product1 {
+  margin-right: 20px;
+  position: relative;
+}
+
+.product2 {
+  margin: 0 10px;
+  position: relative;
+}
+
+.section-products img {
+  width: 100%;
+  border: 1px solid #c2c2c2;
+}
+
+.img-label {
+  position: absolute;
+  top: 130px;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  min-width: 100%;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: .5px;
+  padding-left: 5px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.img-label span {
+  text-transform: uppercase;
+}
+
+.article-products {
+  margin-left: 20px;
+  padding: 20px;
+  border: 1px solid #c2c2c2;
+}
+
+h6 {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+
+.line-decor {
+  height: 8px;
+  background-color: #24ba9f;
+  width: 45%;
+  margin-top: 1px;
+}
+
+.article-products p {
+  font-size: 14px;
+  line-height: 1.5em;
+  color: gray;
+  margin-top: 6px;
+}

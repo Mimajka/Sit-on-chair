@@ -1,0 +1,19 @@
+
+.column {
+  float: left;
+}
+
+.col-2-layout .column {
+  width: 50%;
+}
+
+.col-3-layout .column {
+  width: 33.33%;
+}
+
+.col-2-layout::after,
+.col-3-layout::after {
+  content: "";
+  clear: both;
+  display: block;
+}

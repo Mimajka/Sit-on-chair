@@ -1,0 +1,217 @@
+.section-price-list {
+  background-color: #f1f1f1;
+  padding: 50px 0;
+
+}
+
+.section-price-list h2 {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.section-price-list .line-decor {
+  width: 320px;
+  margin-bottom: 75px;
+}
+
+.section-price-list .column {
+  text-align: center;
+}
+
+.section-price-list .column:first-child {
+  padding-right: 15px;
+}
+
+.section-price-list .column:nth-child(2) {
+  padding: 0 15px;
+}
+
+.section-price-list .column:last-child {
+  padding-left: 15px;
+}
+
+
+.section-price-list h2 {
+  padding: 30px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.offer-items li {
+  list-style-type: none;
+}
+
+
+.offer-one, .offer-three {
+  background-color: #f9f9f9;
+  border: 1px solid #c2c2c2;
+}
+
+.offer-two {
+  background-color: #24ba9f;
+}
+
+.offer-one, .offer-two, .offer-three {
+  border-radius: 3px;
+  position: relative;
+}
+
+.offer-one h2, .offer-three h2 {
+  color: #24ba9f;
+
+}
+
+.offer-two h2 {
+  color: white;
+}
+
+.price-circle {
+  min-width: 130px;
+  min-height: 130px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  margin-bottom: 20px;
+
+}
+
+.offer-one .price-circle, .offer-three .price-circle {
+  border: 1px solid #c2c2c2;
+}
+
+
+.price-per-month {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+}
+
+.offer-one .price-per-month, .offer-three .price-per-month {
+  color: #c2c2c2;
+}
+
+.offer-two .price-per-month {
+  color: #24ba9f;
+}
+
+.price {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+sup {
+  font-size: 16px;
+}
+
+.currency {
+  display: block;
+  text-transform: uppercase;
+}
+
+
+.offer-items {
+  min-height: 180px;
+  margin-bottom: 30px;
+}
+
+.section-price-list li{
+  font-size: 25px;
+  padding: 7.5px 0;
+
+}
+
+.offer-one li:nth-child(2n+1),
+.offer-three li:nth-child(2n+1) {
+  background-color: #e4e4e4;
+}
+
+.offer-two li:nth-child(2n+1) {
+  background-color: white;
+}
+
+.offer-one li:nth-child(2n),
+.offer-three li:nth-child(2n),
+.offer-two li:nth-child(2n){
+  background-color: #f1f1f1;
+}
+
+.offer-one .join-button,
+.offer-three .join-button{
+  background-color: #24ba9f;
+  text-decoration:none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+.offer-two .join-button {
+  background-color: white;
+  text-decoration:none;
+  color: #24ba9f;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+
+.offer-one::before,
+.offer-two::before,
+.offer-three::before {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  border-radius: 100%;
+}
+
+.offer-two::before {
+  background-color: #24ba9f;
+}
+
+.offer-one::before,
+.offer-three::before {
+  background-color: white;
+  border: 1px solid #c2c2c2;
+}
+
+.offer-one::after,
+.offer-two::after,
+.offer-three::after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -105%);
+  border-radius: 100%;
+}
+
+
+.offer-one::after,
+.offer-three::after {
+  background-color: #c2c2c2;
+}
+
+.offer-two::after {
+  background-color: #f9f9f9;
+}

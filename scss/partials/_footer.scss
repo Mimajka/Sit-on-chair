@@ -1,0 +1,41 @@
+
+footer {
+  padding: 20px 0;
+}
+
+footer .col-3-layout {
+  display: flex;
+  align-items: flex-end;
+}
+
+.copyright, .social-media, .logo {
+  float: left;
+}
+
+.copyright {
+  color: #c2c2c2;
+}
+
+.logo {
+  color: #c2c2c2;
+}
+
+.social-media, .logo {
+  width: 20%;
+  text-align: center;
+}
+
+.copyright {
+  width: 60%;
+}
+
+.logo h6 {
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.logo span {
+  font-weight: bold;
+}

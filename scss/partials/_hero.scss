@@ -1,0 +1,95 @@
+.section-hero {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fafafa+0,fafafa+55,fafafa+64,fafafa+64,fafafa+65,ceced6+100 */
+  background: #fafafa; /* Old browsers */
+  background: -moz-linear-gradient(top, #fafafa 0%, #fafafa 55%, #fafafa 64%, #fafafa 64%, #fafafa 65%, #ceced6 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fafafa 0%, #fafafa 55%, #fafafa 64%, #fafafa 64%, #fafafa 65%, #ceced6 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fafafa 0%, #fafafa 55%, #fafafa 64%, #fafafa 64%, #fafafa 65%, #ceced6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#ceced6', GradientType=0); /* IE6-9 */
+
+}
+
+.section-hero__box {
+  padding: 10px 50px 10px 50px;
+  position: relative;
+}
+
+.slider {
+  list-style: none;
+  & li {
+  display: none;
+}
+
+}
+.slider .visible{
+  display: block;
+}
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 520px;
+}
+
+.img-hero-box {
+  width: 45%;
+  & img {
+    width: 150%;
+    position: relative;
+    left: -85px;
+    top: 25px;
+    overflow: hidden;
+  }
+}
+
+.article-hero {
+  width: 55%;
+  text-align: center;
+  & p {
+    line-height: 18px;
+    margin-bottom: 32px;
+    padding: 20px 50px;
+    font-size: 15px;
+  }
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  padding-bottom: 15px;
+  font-weight: normal;
+}
+
+.hero-btn{
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $celadon;
+  border: none;
+  color: $white;
+  border-radius: 10px;
+  font-size: 23px;
+  padding: 13px 35px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  word-spacing: -1px;
+  font-family: Raleway;
+  cursor: pointer;
+}
+
+.less-than,
+.greater-than {
+  display: block;
+  position: absolute;
+  font-weight: normal;
+  font-size: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+}
+
+.less-than {
+  left: 0;
+}
+
+.greater-than {
+  right: 0;
+}
